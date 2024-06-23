@@ -1,0 +1,82 @@
+@import '../../variables.scss';
+
+.btn {
+    background-color: $primary;
+    border:none;
+    border-radius: 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .625rem 2.5rem;
+    text-decoration: none;
+    margin-top: .625rem;
+    text-align: center;
+    &:hover{
+        background-color: $primary-dark;
+    }
+    &:active{
+        position: relative;
+        top: 1px;
+    }
+  }
+
+  .antispam{
+    opacity:0;
+    line-height:0;
+    margin: 0;
+    height:0rem;
+}
+
+  .formControl:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 0.2rem rgba(102,191,191,0.5);
+  }
+
+  .container {
+    padding-bottom: 2.5rem;
+    width:80dvw;
+    max-width:100rem;
+    margin:auto;
+  }
+  
+  .contactMe h2 {
+    padding-top: 1.25rem;
+  }
+  
+  label {
+    color: #40514E;
+    margin-top: 0.5rem;
+  }
+  
+  .antispam {
+    display: none;
+  }
+  
+  .mt-2 {
+    text-align: left;
+  }
+  
+  .button {
+    text-align: center;
+  }
+  
+  .thnks {
+    display: none;
+  }
+  
+  .bottom-container {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    background-color: $primary;
+    text-align: center;
+  }
+  
+  .copy {
+    color: $primary-dark;
+  }
+  
