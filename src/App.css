@@ -22,7 +22,7 @@ a{
 }
 
 .section{
-  padding:3rem;
+  padding:4rem 3rem;
 }
 
 .profile h2{
@@ -54,4 +54,29 @@ a{
   color: #11999E;
 }
 
+/* slick list overrides */
+.slick-slider .slick-next::before,
+.slick-slider .slick-prev::before {
+    color: #66BFBF; 
+    font-size: 2rem ; 
+}
 
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+    width: 2rem; 
+    height: 2rem; 
+    z-index:2
+}
+
+.slick-slider.slick-initialized{
+  max-width:115rem;
+  margin:auto;
+}
+
+.slick-slider .slick-next{
+  right: 3rem;
+}
+
+.slick-slider .slick-prev{
+  left:3rem;
+}

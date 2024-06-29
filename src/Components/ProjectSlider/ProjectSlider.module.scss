@@ -1,0 +1,16 @@
+@use '../../variables' as *;
+
+.projContent{
+    margin:auto;
+    width:80dvw;
+    max-width:90rem;
+    color:#191919;
+    border-radius: 0.75rem;
+    border-color:$primary;
+}
+
+.proj img{
+    height:26rem;
+    border-radius:0.5rem;
+    border: 1px solid rgba(25,25,25, .25);
+}

@@ -9,7 +9,7 @@ import Contact from './Components/Contact/Contact';
 function App() {
   return (
     <div className='App'>
-      {/* <Header></Header> */}
+      <Header></Header>
       <div id='about' className='sect'>
         <div className='profile'>
           <div className='face'><img src='images/aaronFace.jpeg' alt='my face'/></div>
@@ -18,15 +18,15 @@ function App() {
         </div>
       </div>
       <div id='projects' className='section'>
-        {/* <ProjectSlider></ProjectSlider> */}
+        <ProjectSlider></ProjectSlider>
       </div>
       <div id='skills' className='section'>
-        {/* <Skills></Skills> */}
+        <Skills></Skills>
       </div>
       <div id='contact' className='section'>
         <Contact></Contact>
       </div>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.bottomContainer {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    background-color: #66BFBF;
+    text-align: center;
+}
+
+.copy {
+    color: #11999E;
+}
+
+.footerLink {
+    color: #f8f8ff;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    &:hover {
+        color: #EAF6F6;
+        text-decoration: none;
+        }
+}

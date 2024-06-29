@@ -4,8 +4,8 @@ import styles from './Contact.module.scss';
 const Contact = () => {
     return(
         <div id='contact' className={`${styles.sect} ${styles.contactMe}`}>
-            <h2 className='text-center'>Let's Work Together!</h2>
-            <div className='container'>
+            <h2 className='text-center mb-3'>Let's Work Together!</h2>
+            <div className={styles.container}>
             <form id='form' name='contact-form' method='POST' action='mail.php'>
 
                 <div><input type='text' id='name' name='name' className={`form-control mt-2 ${styles.formControl}`} placeholder='Name' /></div>
