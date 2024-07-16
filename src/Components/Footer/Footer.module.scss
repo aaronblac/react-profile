@@ -21,6 +21,8 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.1rem;
+    text-decoration: none;
+    cursor:pointer;
     &:hover {
         color: $primary;
         text-decoration: none;
