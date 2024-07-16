@@ -26,7 +26,7 @@ a{
 }
 
 .profile h2{
-  color: #66BFBF;
+  color: #4682B4;
   grid-area:a;
 }
 .profile p{
@@ -42,22 +42,22 @@ a{
   height:24rem;
   border-radius:100%;
   margin-left:6rem;
-  border: 3px solid #66BFBF;
+  border: 3px solid #4682B4;
 }
 
 .pj {
-  color: #66BFBF;
+  color: #4682B4;
 }
 
 .pj:hover {
   text-decoration: none;
-  color: #11999E;
+  color: #3A6A91;
 }
 
 /* slick list overrides */
 .slick-slider .slick-next::before,
 .slick-slider .slick-prev::before {
-    color: #66BFBF; 
+    color: #4682B4; 
     font-size: 2rem ; 
 }
 
@@ -70,6 +70,7 @@ a{
 
 .slick-slider.slick-initialized{
   max-width:115rem;
+  width:100%;
   margin:auto;
 }
 

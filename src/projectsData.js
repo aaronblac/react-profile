@@ -17,7 +17,7 @@ const projectsData = [
     },
     {
         title: "Scorpion",
-        description: "Client facing page built with proprietary software based on Angular.",
+        description: "Client facing page built with proprietary software based on Angular. All custom components and framework were developed for this project using HTML, SCSS, and JavaScript.",
         image: "/images/projects/PlatformAdvertisingExpectations.png",
         alt:"Platform Advertising Expectations",
         liveLink: "",
@@ -28,6 +28,14 @@ const projectsData = [
         description: "Client facing page built with proprietary software based on Angular. This was build using HTML, JavaScript, and SCSS. All custom components and features were built out for this site.",
         image: "/images/projects/PlatformAdvertising.png",
         alt:"Platform Advertising",
+        liveLink: "",
+        github: ""
+    },
+    {
+        title: "Skill Swap",
+        description: "Skill swapping app where users can utilize peer to peer skill swapping. This was built with Ionic, React, and Typescript. It utilizes Firebase authentication, Firebase Storage, and Firestore. ",
+        image: "/images/projects/skillswapmockup.png",
+        alt:"SkillSwap",
         liveLink: "",
         github: ""
     },

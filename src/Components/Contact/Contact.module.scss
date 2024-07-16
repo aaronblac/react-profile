@@ -32,7 +32,7 @@
 
   .formControl:focus {
     border-color: $primary;
-    box-shadow: 0 0 0 0.2rem rgba(102,191,191,0.5);
+    box-shadow: 0 0 0 0.2rem rgba(54, 100, 136, 0.5);
   }
 
   .container {
@@ -47,7 +47,7 @@
   }
   
   label {
-    color: #40514E;
+    color: $primary;
     margin-top: 0.5rem;
   }
   

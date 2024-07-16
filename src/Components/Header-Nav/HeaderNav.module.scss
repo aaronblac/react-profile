@@ -1,3 +1,5 @@
+@use '../../variables' as *;
+
 .drop {
     padding: .625rem;
     img {
@@ -10,7 +12,7 @@
         align-items:center;
         white-space: nowrap;
         &:hover .labels{
-            color:#66BFBF;
+            color:$primary;
         }
     }
     &:hover h6 {
@@ -19,7 +21,7 @@
 }
 
 .labels {
-    color: #f8f8ff;
+    color: $white;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.625rem;
     display: block;
