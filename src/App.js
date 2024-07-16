@@ -1,16 +1,32 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, {useState} from 'react';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Skills from './Components/Skills/Skills';
 import ProjectSlider from './Components/ProjectSlider/ProjectSlider';
 import Contact from './Components/Contact/Contact';
+import SlideIn from './Components/SlideIn/SlideIn';
 
 function App() {
+  const [showSlideIn, setShowSlideIn] = useState(false);
+
+  const handleShowSlideIn = () => {
+    setShowSlideIn(true);
+  };
+
+  const handleCloseSlideIn = () => {
+    setShowSlideIn(false);
+  };
   return (
     <div className='App'>
-      <Header></Header>
-      <div id='about' className='sect'>
+      <SlideIn
+        show={showSlideIn}
+        onClose={handleCloseSlideIn} 
+        pdfLink="/images/AaronBlackCV.pdf" 
+      />
+      <Header slideIn={handleShowSlideIn}></Header>
+      <div id='about' className='section'>
         <div className='profile'>
           <div className='face'><img src='images/aaronFace.jpeg' alt='my face'/></div>
           <h2>Hello.</h2>
@@ -26,7 +42,7 @@ function App() {
       <div id='contact' className='section'>
         <Contact></Contact>
       </div>
-      <Footer></Footer>
+      <Footer slideIn={handleShowSlideIn}></Footer>
     </div>
   );
 }

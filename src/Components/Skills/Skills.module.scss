@@ -18,3 +18,15 @@ ul{
     padding:0rem;
     margin:0rem;
 }
+
+@media screen and (max-width:1200px){
+    .skillContainer{
+        width:85dvw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .skillContainer{
+        width: 100%;
+    }
+}

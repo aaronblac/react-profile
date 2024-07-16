@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./HeaderNav.module.scss";
 
-const HeaderNav = () => {
+const HeaderNav = ({slideIn}) => {
     return(
         <div className='row gap-3'>
       {/* About Me  */}
@@ -27,10 +27,10 @@ const HeaderNav = () => {
         </div>
          {/* CV  */}
         <div className={` ${styles.drop} ${styles.cv} col-2`}>
-          <a  href="resume.html" target="_blank">
+          <span onClick={slideIn}>
             <img src="images/cv-nav-link.png" className="" alt="Resume/CV"/>
             <h6 className={`${styles.labels}`}>Resume/CV</h6>
-          </a>
+          </span>
         </div>
         {/* Contact  */}
         <div className={` ${styles.drop} ${styles.ctc} col-2 `}>

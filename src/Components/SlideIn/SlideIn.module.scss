@@ -1,0 +1,75 @@
+@import '../../variables.scss';
+
+.slideIn {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: $white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    padding: 1.25rem;
+    z-index: 1000;
+    overflow-y: auto;
+  
+    &.show {
+      right: 0;
+    }
+  
+    .closeButton {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      position: absolute;
+      top: 0.625rem;
+      right: 0.625rem;
+      cursor: pointer;
+    }
+  
+    object {
+      border: none;
+    }
+  
+    .downloadContainer {
+      text-align: center;
+      margin-top: 1.25rem;
+    }
+  
+    .btn {
+        background-color: $primary;
+        border:none;
+        border-radius: 0.5rem;
+        display: inline-block;
+        cursor: pointer;
+        color: $white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: .625rem 2.5rem;
+        text-decoration: none;
+        margin-top: .625rem;
+        text-align: center;
+        &:hover{
+            background-color: $primary-dark;
+        }
+        &:active{
+            position: relative;
+            top: 1px;
+        }
+      }
+  }
+
+  @media screen and (max-width:768px){
+    .slideIn{
+        padding: 1px;
+        width:100%;
+        h2{
+            padding:0.25rem 1rem;
+        }
+    }
+    .slideIn .closeButton{
+        top:0;
+    }
+  }
+  

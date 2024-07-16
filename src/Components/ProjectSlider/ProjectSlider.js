@@ -25,8 +25,8 @@ const ProjectSlider = () => {
                 <Slider {...settings}>
                     {projectsData.map((project,index)=>(
                         <div className={styles.proj} key={index}>
-                            <div className={` ${styles.projContent} card pt-4 px-4 ` }>
-                                <div className='d-flex gap-3 justify-content-between pb-4'>
+                            <div className={` ${styles.projContainer} card pt-4 px-4 ` }>
+                                <div className={` ${styles.projContents} gap-3 pb-4` }>
                                     <div>
                                         <h2>{project.title}</h2>
                                         <p>{project.description}</p>

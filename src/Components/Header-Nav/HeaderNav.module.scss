@@ -2,10 +2,12 @@
 
 .drop {
     padding: .625rem;
+    cursor:pointer;
     img {
         height: 2.75rem;
     }
-    a {
+    a,
+    span {
         text-decoration: none;
         display:flex;
         flex-direction: column;

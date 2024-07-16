@@ -35,7 +35,7 @@
     box-shadow: 0 0 0 0.2rem rgba(54, 100, 136, 0.5);
   }
 
-  .container {
+  .contactContainer {
     padding-bottom: 2.5rem;
     width:80dvw;
     max-width:90rem;
@@ -80,3 +80,13 @@
     color: $primary-dark;
   }
   
+@media screen and (max-width:1200px){
+  .contactContainer{
+      width:85dvw;
+  }
+}
+@media screen and (max-width: 768px){
+  .contactContainer{
+    width:100%;
+  }
+}

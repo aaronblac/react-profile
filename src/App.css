@@ -1,4 +1,4 @@
-.sect:has(.profile){
+.section:has(.profile){
   width:100dvw;
   background-color: #191919;
 }
@@ -80,4 +80,83 @@ a{
 
 .slick-slider .slick-prev{
   left:3rem;
+}
+
+@media screen and (max-width: 1350px){
+  
+  .face img{
+    height:20rem;
+    margin: 1rem auto;
+  }
+  .slick-slider .slick-next{
+    right: 2rem;
+  }
+  
+  .slick-slider .slick-prev{
+    left:2rem;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .section{
+    padding:3rem 1rem;
+  }
+  .slick-slider .slick-next{
+    right: 1rem;
+  }
+  
+  .slick-slider .slick-prev{
+    left:1rem;
+  }
+  .profile{
+    width:85dvw;
+  }
+}
+
+@media screen and (max-width: 1044px){
+  .slick-slider .slick-next{
+    right: 0;
+  }
+  
+  .slick-slider .slick-prev{
+    left:0;
+  }
+
+  .slick-dots{
+    bottom:0;
+  }
+  .section{
+    padding:2rem 1rem;
+  }
+}
+
+@media screen and (max-width:900px){
+  .profile{
+    grid-template-areas: "a"
+                          "c"
+                          "b";
+  }
+  .face{
+    display: flex;
+    img {
+      height:18rem;
+    }
+  } 
+}
+
+@media screen and (max-width: 768px){
+  .slick-slider .slick-prev::before,
+  .slick-slider .slick-next::before{
+      display:none;
+  }
+  .profile{
+    width:100%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width:550){
+  .slick-dots{
+    bottom:0;
+  }
 }

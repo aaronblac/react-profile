@@ -1,6 +1,6 @@
 @use '../../variables' as *;
 
-.projContent{
+.projContainer{
     margin:auto;
     width:80dvw;
     max-width:90rem;
@@ -14,3 +14,67 @@
     border-radius:0.5rem;
     border: 1px solid rgba(25,25,25, .25);
 }
+
+.projContents{
+    display:flex;
+    gap:1rem;
+    padding-bottom:1.5rem;
+}
+
+@media screen and (max-width: 1350px){
+    .projContents{
+        flex-direction: column;
+        img{
+            margin:auto;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+ .projContainer{
+    width:85dvw;
+ }
+    
+}
+
+@media screen and (max-width: 1044px){
+    .proj img{
+        height: 22rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .proj img{
+        height: 20.5rem;
+    }
+}
+@media screen and (max-width: 825px){
+    .proj img{
+        height: 19rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .proj img{
+        height: 18rem;
+    }
+    .projContainer{
+        width:100%
+    }
+}
+@media screen and (max-width: 650px){
+    .proj img{
+        height: 16rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .proj img{
+        height: 15rem;
+    }
+}
+@media screen and (max-width: 550px){
+    .proj img{
+        height: auto;
+        width:100%;
+    }
+}
+
+

@@ -2,15 +2,15 @@ import React from "react";
 import styles from "./Header.module.scss"
 import HeaderNav from "../Header-Nav/HeaderNav"
 
-const Header = () => {
+const Header = ({slideIn}) => {
     return(
         <div className={`${styles.headerContainer}`}>
             <div className={ `${styles.header}` }>
-                <div>
+                <div className={styles.headerTitle}>
                     <h1>AARON BLACK</h1>
                     <h3>Software Developer</h3>
                 </div>
-                <HeaderNav></HeaderNav>
+                <HeaderNav slideIn={slideIn}></HeaderNav>
             </div>
         </div>
     )
