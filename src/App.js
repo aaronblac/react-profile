@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, {useState, useEffect, useLocation} from 'react';
+import React, {useState, useEffect} from 'react';
+import {useLocation} from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Skills from './Components/Skills/Skills';
@@ -37,7 +38,7 @@ function App() {
   };
 
   usePageViews();
-  
+
   return (
     <div className='App'>
       <SlideIn
