@@ -1,28 +1,29 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {useState, useEffect} from 'react';
-import {useLocation} from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Skills from './Components/Skills/Skills';
 import ProjectSlider from './Components/ProjectSlider/ProjectSlider';
 import Contact from './Components/Contact/Contact';
 import SlideIn from './Components/SlideIn/SlideIn';
-import initializeAnalytics from './analytics';
+import { initializeAnalytics, logPageExit, logPageView } from './analytics';
 import ReactGA from 'react-ga';
 
 initializeAnalytics();
 
-  const usePageViews = () => {
-    let location = useLocation();
-    useEffect(() => {
-      ReactGA.pageview(location.pathname + location.search);
-    }, [location]);
-  };
-  
-
 function App() {
   const [showSlideIn, setShowSlideIn] = useState(false);
+
+  useEffect(() => {
+    logPageView();
+
+    window.addEventListener('beforeunload', logPageExit);
+
+    return () => {
+      window.removeEventListener('beforeunload', logPageExit);
+    };
+  }, []);
 
   const handleShowSlideIn = () => {
     setShowSlideIn(true);
@@ -36,8 +37,6 @@ function App() {
   const handleCloseSlideIn = () => {
     setShowSlideIn(false);
   };
-
-  usePageViews();
 
   return (
     <div className='App'>
