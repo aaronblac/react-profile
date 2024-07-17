@@ -1,23 +1,43 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, {useState} from 'react';
+import React, {useState, useEffect, useLocation} from 'react';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Skills from './Components/Skills/Skills';
 import ProjectSlider from './Components/ProjectSlider/ProjectSlider';
 import Contact from './Components/Contact/Contact';
 import SlideIn from './Components/SlideIn/SlideIn';
+import initializeAnalytics from './analytics';
+import ReactGA from 'react-ga';
+
+initializeAnalytics();
+
+  const usePageViews = () => {
+    let location = useLocation();
+    useEffect(() => {
+      ReactGA.pageview(location.pathname + location.search);
+    }, [location]);
+  };
+  
 
 function App() {
   const [showSlideIn, setShowSlideIn] = useState(false);
 
   const handleShowSlideIn = () => {
     setShowSlideIn(true);
+    ReactGA.event({
+      category: 'User',
+      action: 'Looked at resume',
+      label: 'Resume link'
+    })
   };
 
   const handleCloseSlideIn = () => {
     setShowSlideIn(false);
   };
+
+  usePageViews();
+  
   return (
     <div className='App'>
       <SlideIn

@@ -1,5 +1,5 @@
 .section:has(.profile){
-  width:100dvw;
+  width:100%;
   background-color: #191919;
 }
 
@@ -12,11 +12,11 @@ a{
   grid-template-areas: "a . c"
                       "b b c"
                       "b b c";
-  padding:8rem 3rem;
+  padding:3rem;
   display:grid;
   color: #f8f8fa;
   max-width:100rem;
-  width:80dvw;
+  width:80%;
   margin:auto;
   align-items: center;
 }
@@ -37,6 +37,7 @@ a{
 
 .face{
   grid-area: c;
+  margin:1rem;
 }
 .face img{
   height:24rem;
@@ -109,7 +110,7 @@ a{
     left:1rem;
   }
   .profile{
-    width:85dvw;
+    width:85%;
   }
 }
 
